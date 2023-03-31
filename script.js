@@ -67,9 +67,9 @@ function sendMail() {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         mobil: document.getElementById("mobil").value,
+        sluzba: document.getElementById("sluzba").value,
+        dopln_sluzba: document.getElementById("dopln_sluzba").value,
         adresa: document.getElementById("adresa").value,
-        balik: document.getElementById("balik").value,
-        dopln_balik: document.getElementById("dopln_balik").value,
         message: document.getElementById("message").value,
     };
 
@@ -80,9 +80,9 @@ function sendMail() {
         document.getElementById("name").value = "",
         document.getElementById("email").value = "",
         document.getElementById("mobil").value = "",
+        document.getElementById("sluzba").value = "",
+        document.getElementById("dopln_sluzba").value = "",
         document.getElementById("adresa").value = "",
-        document.getElementById("balik").value = "",
-        document.getElementById("dopln_balik").value = "",
         document.getElementById("message").value = "",
         console.log(res);
         alert("Vaša objednávka bola úspešne odoslaná");
