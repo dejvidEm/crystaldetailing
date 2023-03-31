@@ -13,6 +13,17 @@
     <link rel="stylesheet" href="scss/style.css">
     <!-- link icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link emailJS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("HZxrLcp24pz2dEKEC");
+    })();
+    </script>
+
 </head>
 <body>
     <!-- Navbar -->
@@ -182,15 +193,15 @@
 
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Meno a priezvisko">
-                <input type="email" placeholder="Emailová adresa">
+                <input type="text" placeholder="Meno a priezvisko" id="name">
+                <input type="email" placeholder="Emailová adresa" id="email">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobilné číslo">
-                <input type="text" placeholder="Predmet emailu">
+                <input type="number" placeholder="Mobilné číslo" id="mobil">
+                <input type="text" placeholder="Balík">
             </div>
-            <textarea name="" id="" cols="30" rows="10">Vaša správa</textarea>
-            <input type="submit" value="Odoslať správu" class="btn">
+            <textarea name="" id="message" cols="30" rows="10">Vaša správa</textarea>
+            <input type="submit" value="Odoslať správu" class="btn" onclick="sendMail()">
         </form>
     </section>
 

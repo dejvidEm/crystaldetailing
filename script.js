@@ -61,3 +61,30 @@ const typed = new Typed(".multiple-text", {
     backDelay: 1000,
     loop: true
 });
+
+function sendMail() {
+    var par = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        mobil: document.getElementById("mobil").value,
+        adresa: document.getElementById("adresa").value,
+        balik: document.getElementById("balik").value,
+        dopln_balik: document.getElementById("dopln_balik").value,
+        message: document.getElementById("message").value,
+    };
+
+    const serviceID = "service_pzqfh5n";
+    const templateID = "template_h6mrtry";
+
+    emailjs.send(serviceID, templateID, par).then((res) => {
+        document.getElementById("name").value = "",
+        document.getElementById("email").value = "",
+        document.getElementById("mobil").value = "",
+        document.getElementById("adresa").value = "",
+        document.getElementById("balik").value = "",
+        document.getElementById("dopln_balik").value = "",
+        document.getElementById("message").value = "",
+        console.log(res);
+        alert("Vaša objednávka bola úspešne odoslaná");
+    });
+}
