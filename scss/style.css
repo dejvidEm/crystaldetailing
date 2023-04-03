@@ -9,6 +9,13 @@
   scroll-behavior: smooth;
 }
 
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 :root {
   --bg-color: #1f242d;
   --second-bg-color: #323946;
@@ -176,7 +183,6 @@ span {
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
-  border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
 }
 .sluzby .sluzby-container .sluzby-box i {
@@ -193,8 +199,26 @@ span {
   font-weight: 100;
 }
 .sluzby .sluzby-container .sluzby-box:hover {
-  border-color: var(--main-color);
+  border-width: 0.3rem;
   transform: scale(1.03);
+}
+.sluzby .sluzby-container .box1 {
+  border: 0.2rem solid #e6a31c;
+}
+.sluzby .sluzby-container .box1:hover {
+  box-shadow: 0 0 1.2rem #f1ac21;
+}
+.sluzby .sluzby-container .box2 {
+  border: 0.2rem solid #d1d1d1;
+}
+.sluzby .sluzby-container .box2:hover {
+  box-shadow: 0 0 1.2rem #e0e0e0;
+}
+.sluzby .sluzby-container .box3 {
+  border: 0.2rem solid #2edbdb;
+}
+.sluzby .sluzby-container .box3:hover {
+  box-shadow: 0 0 1.2rem #30eaea;
 }
 
 .galeria {
