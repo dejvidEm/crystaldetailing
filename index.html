@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Detailing</title>
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="scss/style.css">
+    <!-- link icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link emailJS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("HZxrLcp24pz2dEKEC");
+    })();
+    </script>
+
+    <!-- link particlesJS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <a href="#" class="logo">Crystal Detailing</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#domov" class="active">Domov</a>
+            <a href="#onas">O nás</a>
+            <a href="#sluzby">Balíky</a>
+            <a href="#galeria">Galéria</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+    <!-- Domov -->
+    <section class="domov" id="domov">
+        <div class="domov-content">
+            <h3>Profesionálny</h3>
+            <h1>Mobilný auto-detailing</h1>
+            <h3>V okrese <span class="multiple-text"></span></h3>
+            <p>Vôňu nového auta privezieme až ku Vám domov</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bx-envelope' ></i></a>
+            </div>
+            <a href="#" class="btn">Kontaktuj Nás</a>
+        </div>
+        <div class="domov-img">
+            <img src="src/logo-domov.png" alt="logo-crystal">
+        </div>
+    </section>
+
+    <!-- O nás -->
+    <section class="onas" id="onas">
+        <div class="about-img">
+            <img src="src/logo-domov.png" alt="onas-img">
+        </div>
+        <div class="onas-content">
+            <h2 class="heading">Niečo o <span>Nás</span></h2>
+            <h3>Mobilné detailingové štúdio</h3>
+            <p>
+                Sme mladý no profesionálny tím ktorý sa zaoberá mobilným detailingom
+                 osobných automobilov v domácnostiach, no problém nám nerobia ani osobné
+                  a dodávkové či nákladné automobily ktoré slúžia firmám a využívajú sa 
+                  denno-denne naplno. Spomeňte si kedy naposledy dostalo Vaše auto detailnu 
+                  ručnú očistu. Chápeme ak nemáte po náročnom dni v práci čas a ani chuť tráviť 
+                  nekonečné minúty v zápchach cestou na najbližšiu autoumývarku. 
+                  Práve preto odvedieme všetkú prácu na Vašom aute priamo u Vás doma na dvore či parkovisku. 
+                  O vozidlá sa počas čistenia a detailingu staráme ako o svoje vlastné a najdôležitejšia 
+                  je pre nás práve Vaša spokojnosť. Navyše, všetky služby poskytujeme bez nutnosti odberu 
+                  vody a energie od zákazníka. Presvedčte sa na vlastné oči a pokračujte na 
+                  výber balíka alebo služby na stránku SLUŽBY.
+            </p>
+            <a href="#galeria" class="btn">Galéria</a>
+        </div>
+    </section>
+
+    <!-- Služby -->
+    <div>
+    <div id="particles-js"></div>
+    <section class="sluzby" id="sluzby">
+        <h2 class="heading">Naše <span>Služby</span></h2>
+        <div class="sluzby-container">
+
+            <!-- Balík GOLD -->
+            <div class="sluzby-box box1">
+                <i class='bx bxs-car-wash'></i>
+                <h3>Balík GOLD</h3>
+                <p>• Vysávanie celého priestoru vozidla<br>
+                • Detailné čistenie prístrojového panelu<br>
+                • Detailing dverí a úložných priestorov<br>
+                • Ručné čistenie okien a zrkadiel</p>
+                <a href="#kontakt" class="btn" onclick="vyberBalik()" style="color: rgb(255, 255, 255)">30€</a>
+            </div>
+            
+            <!-- Balík PLATINUM -->
+            <div class="sluzby-box box2">
+                <i class='bx bx-bulb' ></i>
+                <h3>Balík PLATINUM</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Assumenda dicta asperiores
+                    porro aliquid ab amet dolores modi, cum vitae esse.
+                </p>
+                <a href="#kontakt" class="btn" onclick="vyberBalik2()" style="color: rgb(255, 255, 255)">50€</a>
+            </div>
+            
+            <!-- Balík DIAMOND -->
+            <div class="sluzby-box box3">
+                <i class='bx bxs-component' ></i>
+                <h3>Balík DIAMOND</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Assumenda dicta asperiores
+                    porro aliquid ab amet dolores modi, cum vitae esse.
+                </p>
+                <a href="#kontakt" class="btn" onclick="vyberBalik3()" style="color: rgb(255, 255, 255)">80€</a>
+            </div>
+
+        </div>
+    </section>
+    </div>
+
+    <!-- Galéria -->
+    <section class="galeria" id="galeria">
+        <h2 class="heading">Posledné <span>detailingy</span></h2>
+
+        <div class="galeria-container">
+            <div class="galeria-box">
+                <img src="src/galeria/bmw1.png" alt="detailing-bmw">
+                <div class="galeria-layer">
+                    <h4>BMW 325D M-Paket</h4>
+                </div>
+            </div>
+
+            <div class="galeria-box">
+                <img src="src/galeria/bmw2.png" alt="detailing-bmw">
+                <div class="galeria-layer">
+                    <h4>BMW 325D M-Paket</h4>
+                </div>
+            </div>
+
+            <div class="galeria-box">
+                <img src="src/galeria/bmw3.png" alt="detailing-bmw">
+                <div class="galeria-layer">
+                    <h4>BMW 325D M-Paket</h4>
+                </div>
+            </div>
+
+            <div class="galeria-box">
+                <img src="src/galeria/bmw3.png" alt="detailing-bmw">
+                <div class="galeria-layer">
+                    <h4>BMW 325D M-Paket</h4>
+                </div>
+            </div>
+
+            <div class="galeria-box">
+                <img src="src/galeria/bmw2.png" alt="detailing-bmw">
+                <div class="galeria-layer">
+                    <h4>BMW 325D M-Paket</h4>
+                </div>
+            </div>
+
+            <div class="galeria-box">
+                <img src="src/galeria/bmw1.png" alt="detailing-bmw">
+                <div class="galeria-layer">
+                    <h4>BMW 325D M-Paket</h4>
+                </div>
+            </div>
+
+            <div class="galeria-box">
+                <img src="src/galeria/bmw1.png" alt="detailing-bmw">
+                <div class="galeria-layer">
+                    <h4>BMW 325D M-Paket</h4>
+                </div>
+            </div>
+
+            <div class="galeria-box">
+                <img src="src/galeria/bmw1.png" alt="detailing-bmw">
+                <div class="galeria-layer">
+                    <h4>BMW 325D M-Paket</h4>
+                </div>
+            </div>
+        </div>
+    </section>   
+    
+    <!-- Kontakt -->
+    <section class="kontakt" id="kontakt">
+        <h2 class="heading">Kontaktuj <span>Nás!</span></h2>
+
+        <form>
+            <div class="input-box">
+                <input type="text" placeholder="Meno a priezvisko" id="name">
+                <input type="email" placeholder="Emailová adresa" id="email">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="PSČ, adresa a číslo domu" id="adresa">
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" placeholder="Mobil">
+            </div>
+            <div class="input-box">
+                <select id="balik" name="balik-list" form="balikList">
+                    <option value="Balík GOLD">Balík GOLD</option>
+                    <option value="Balík PLATINUM">Balík PLATINUM</option>
+                    <option value="Balík DIAMOND">Balík DIAMOND</option>
+                </select>
+                <select id="dopln" name="dopln-list" form="doplnList">
+                    <option value="nič">Žiadna doplnková služba</option>
+                    <option value="Leštenie svetlometov">Leštenie svetlometov</option>
+                    <option value="Detailing kolies a diskov">Detailing kolies a diskov</option>
+                    <option value="Definfekcia a čistenie parou">Definfekcia a čistenie parou</option>
+                    <option value="Oživenie čiernych plastov">Oživenie čiernych plastov</option>
+                </select>
+            </div>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Vaša správa"></textarea>
+            <input type="submit" value="Odoslať správu" class="btn" onclick="sendMail()">
+        </form>
+    </section>
+
+    <!-- Footer, Päta -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 Crystal Bratislava | Všetky práva vyhradené.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#domov"><i class='bx bx-up-arrow-circle'></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+     <!-- typed js -->
+     <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+
+    <!-- link javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
