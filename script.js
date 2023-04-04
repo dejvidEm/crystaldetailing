@@ -49,7 +49,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.domov-content, .heading', { origin: "top" });
-ScrollReveal().reveal('.domov-img, .sluzby-container, .galeria-box, .kontakt form', { origin: "bottom" });
+ScrollReveal().reveal('.domov-img, .galeria-box, .kontakt form', { origin: "bottom" });
 ScrollReveal().reveal('.domov-content h1, .about-img', { origin: "left" });
 ScrollReveal().reveal('.domov-content p, .onas-content', { origin: "right" });
 
@@ -89,6 +89,21 @@ function sendMail() {
     });
 }
 
+// vyber balika v karte kontakt na áaklade kliknutia na balik
+
+const vyberBalik = (e) => {
+  const $select = document.querySelector('#balik');
+  $select.value = 'Balík GOLD'
+};
+const vyberBalik2 = (e) => {
+  const $select = document.querySelector('#balik');
+  $select.value = 'Balík PLATINUM'
+};
+const vyberBalik3 = (e) => {
+  const $select = document.querySelector('#balik');
+  $select.value = 'Balík DIAMOND'
+};
+
 // particles JS - JSON
 
 particlesJS("particles-js", {
@@ -119,7 +134,7 @@ particlesJS("particles-js", {
         }
       },
       "opacity": {
-        "value": 0.48927153781200905,
+        "value": 0.28,
         "random": false,
         "anim": {
           "enable": true,

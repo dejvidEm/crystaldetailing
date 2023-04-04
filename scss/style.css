@@ -11,8 +11,8 @@
 
 #particles-js {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
 }
 
@@ -157,6 +157,7 @@ section {
 .onas .onas-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+  line-height: 1.6;
 }
 
 .heading {
@@ -311,6 +312,15 @@ span {
   margin-top: 2rem;
   cursor: pointer;
 }
+.kontakt select {
+  width: 49%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--second-bg-color);
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
 
 .kontakt form .input-box input,
 .kontakt form textarea {
@@ -458,6 +468,9 @@ span {
   }
   .kontakt form .input-box input {
     width: 100%;
+  }
+  select {
+    width: 100% !important;
   }
 }
 @media (max-width: 365px) {
