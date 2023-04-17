@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a6d1d706.css",
+    "main.js": "/static/js/main.29f5a817.js",
+    "static/media/bmw3.png": "/static/media/bmw3.ba1e467f88e9b5ced2a8.png",
+    "static/media/fab1.png": "/static/media/fab1.57756b49df6c59bc5699.png",
+    "static/media/bmw1.png": "/static/media/bmw1.0167536e3b1d660e464b.png",
+    "static/media/bmw2.png": "/static/media/bmw2.291f349da1cbaac54c6d.png",
+    "static/media/logo-domov.png": "/static/media/logo-domov.e03ed532b6e578c669cd.png",
+    "index.html": "/index.html",
+    "main.a6d1d706.css.map": "/static/css/main.a6d1d706.css.map",
+    "main.29f5a817.js.map": "/static/js/main.29f5a817.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6d1d706.css",
+    "static/js/main.29f5a817.js"
+  ]
+}
